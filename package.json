@@ -1,0 +1,14 @@
+{
+  "name": "simple-mind-map-plugin-themes",
+  "version": "1.0.0",
+  "description": "为simple-mind-map提供可用的主题",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild ./index.js --bundle --minify --external:buffer --format=esm --outfile=./dist/themes.esm.min.js && esbuild ./index.js --bundle --minify --external:buffer --format=cjs --outfile=./dist/themes.cjs.min.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.17.15"
+  }
+}
